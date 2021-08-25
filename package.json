@@ -1,0 +1,27 @@
+{
+  "name": "report",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "github commits report",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecommerceberlin/report.git"
+  },
+  "author": "az",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ecommerceberlin/report/issues"
+  },
+  "homepage": "https://github.com/ecommerceberlin/report#readme",
+  "dependencies": {
+    "@octokit/core": "^3.5.1",
+    "dayjs": "^1.10.6",
+    "dotenv": "^10.0.0",
+    "json2csv": "^5.0.6",
+    "lodash": "^4.17.21"
+  }
+}
