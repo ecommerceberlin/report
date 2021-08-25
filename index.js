@@ -37,6 +37,7 @@ const commits = [];
 const issues = [];
 
 const stats = {
+    date: curDate,
     commits: 0,
     issues_single_open: 0,
     issues_single_closed: 0,
@@ -192,5 +193,13 @@ fs.writeFile(`${targetFolder}/summary.md`, objectToMarkdown(stats), function(err
     if(err) {
         return console.log(err);
     }
-    console.log("Summary report saved!");
+    console.log("Summary markdown report saved!");
+});
+
+
+fs.writeFile(`${targetFolder}/summary.json`, JSON.stringify(stats), function(err) {
+    if(err) {
+        return console.log(err);
+    }
+    console.log("Summary JSON report saved!");
 });
