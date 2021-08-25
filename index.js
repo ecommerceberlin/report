@@ -27,6 +27,7 @@ const curDate = dayjs().format(dateFormat);
 const targetFolder = `reports/${curDate}`
 const labelsToSkip = ["dependencies"]
 
+const objectToMarkdown = (obj) => Object.keys(obj).map(key => `**${key}:** ${obj[key]}`).join("\n\n")
 
 /**
  * no user config below
@@ -180,7 +181,7 @@ if(stats.issues_single_closed && stats.issues_single_duration){
     stats.issues_single_duration = Math.round(stats.issues_single_duration/60/stats.issues_single_closed);
 }
 
-fs.writeFile(`${targetFolder}/summary.json`, JSON.stringify(stats), function(err) {
+fs.writeFile(`${targetFolder}/summary.md`, objectToMarkdown(stats), function(err) {
     if(err) {
         return console.log(err);
     }
