@@ -24,8 +24,14 @@ const repos = [
 const dateFormat = "YYYY-MM-DD"
 const friendlyDate = (str) => str? dayjs(str).format(dateFormat): ""
 const curDate = dayjs().format(dateFormat);
+const targetFolder = `reports/${curDate}`
+const labelsToSkip = ["dependencies"]
 
-const octokit = new Octokit({ auth: process.env.GITHUB_PERSONAL_TOKEN });
+
+/**
+ * no user config below
+ */
+
 const commits = [];
 const issues = [];
 const stats = {
@@ -34,6 +40,10 @@ const stats = {
     issues_closed: 0,
     issues_touched: 0
 }
+
+
+const octokit = new Octokit({ auth: process.env.GITHUB_PERSONAL_TOKEN });
+
 
 await Promise.all(repos.map(async (repo) => {
     
@@ -61,6 +71,11 @@ await Promise.all(repos.map(async (repo) => {
     );
 
     data.forEach(issue => {
+
+        if(!isEmpty(issue.labels) && labelsToSkip.includes(issue.labels[0].name)){
+            return
+        }
+
         issues.push({
             repo, 
             message: issue.title.replace(/\r?\n|\r/gm, " "),
@@ -90,11 +105,15 @@ await Promise.all(repos.map(async (repo) => {
 }));
 
 
+if (!fs.existsSync(targetFolder)){
+    fs.mkdirSync(targetFolder, { recursive: true });
+}
+
 const sortedCommits = sortBy(commits, ["date"])
 
 const csvCommits  = new Parser({fields: Object.keys(sortedCommits[0])}).parse(sortedCommits);
 
-fs.writeFile(`reports/commits_${curDate}.csv`, csvCommits, function(err) {
+fs.writeFile(`${targetFolder}/commits.csv`, csvCommits, function(err) {
     if(err) {
         return console.log(err);
     }
@@ -103,16 +122,16 @@ fs.writeFile(`reports/commits_${curDate}.csv`, csvCommits, function(err) {
 
 const csvIssues  = new Parser({fields: Object.keys(issues[0]) }).parse(issues);
 
-fs.writeFile(`reports/issues_${curDate}.csv`, csvIssues, function(err) {
+fs.writeFile(`${targetFolder}/issues.csv`, csvIssues, function(err) {
     if(err) {
         return console.log(err);
     }
     console.log("Issues report saved!");
 }); 
 
-fs.writeFile(`reports/summary_${curDate}.json`, JSON.stringify(stats), function(err) {
+fs.writeFile(`${targetFolder}/summary.json`, JSON.stringify(stats), function(err) {
     if(err) {
         return console.log(err);
     }
     console.log("Summary report saved!");
-}); 
+});
