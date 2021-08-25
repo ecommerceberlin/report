@@ -78,16 +78,21 @@ await Promise.all(repos.map(async (repo) => {
 
         issues.push({
             repo, 
+            state: issue.state,
+            creator: issue.user.login,
+            assignees: issue.assignees.map(item=>item.login).join(", "),
             message: issue.title.replace(/\r?\n|\r/gm, " "),
             labels: issue.labels.map(item=>item.name).join(", "),
-            state: issue.state,
-            assignees: issue.assignees.map(item=>item.login).join(", "),
-            milestone: "milestone" in issue && !isEmpty(issue.milestone)? issue.milestone.title: "",
             created_at: friendlyDate(issue.created_at),
             updated_at: friendlyDate(issue.updated_at), 
             closed_at: friendlyDate(issue.closed_at),
-            url: issue.url,
+            comments: issue.comments,
+            milestone: "milestone" in issue && !isEmpty(issue.milestone)? issue.milestone.title: "",
+            url: issue.html_url,
         })
+
+        // console.log(issue)
+
         switch(issue.state){
             case "open":
                 ++stats.issues_open
