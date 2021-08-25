@@ -17,8 +17,12 @@ const repos = [
     "ecommerceberlin/ecommercegermanyawards.com",
     "ecommerceberlin/ehandel.com.pl",
     "ecommerceberlin/targiehandlu.pl",
+   // "ecommerceberlin/account.ecommerceberlin.com",
     "az/eventjuicer-api",
-    "eventjuicer/services"
+    "eventjuicer/services",
+    "eventjuicer/api-components",
+    "eventjuicer/exhibitordeck",
+    // "targiehandlu/account.targiehandlu.pl" //we will be moving it to ecommerceberlin
 ]
 
 const dateFormat = "YYYY-MM-DD"
