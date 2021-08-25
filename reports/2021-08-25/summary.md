@@ -13,3 +13,5 @@
 **issues_shared_closed:** 1
 
 **issues_shared_duration:** 478
+
+**issues_bugs:** 4

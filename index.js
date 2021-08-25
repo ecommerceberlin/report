@@ -28,7 +28,7 @@ const targetFolder = `reports/${curDate}`
 const labelsToSkip = ["dependencies"]
 
 const objectToMarkdown = (obj) => Object.keys(obj).map(key => `**${key}:** ${obj[key]}`).join("\n\n")
-
+const clearNewlines = (str) => str.replace(/\r?\n|\r/gm, " ")
 /**
  * no user config below
  */
@@ -44,7 +44,8 @@ const stats = {
     issues_touched: 0,
     issues_shared_open: 0,
     issues_shared_closed: 0,
-    issues_shared_duration: 0
+    issues_shared_duration: 0,
+    issues_bugs: 0
 }
 
 const octokit = new Octokit({ auth: process.env.GITHUB_PERSONAL_TOKEN });
@@ -62,7 +63,7 @@ await Promise.all(repos.map(async (repo) => {
     data.forEach(commit => commits.push({
             date: friendlyDate(commit.commit.author.date), 
             repo, 
-            message: commit.commit.message.replace(/\r?\n|\r/gm, " ")
+            message: clearNewlines(commit.commit.message)
     }))
 
 }));
@@ -84,6 +85,8 @@ await Promise.all(repos.map(async (repo) => {
     data.forEach(issue => {
 
         const duration = issue.closed_at? dayjs(issue.closed_at).diff(dayjs(issue.created_at), 'm'): 0;
+        const labels = issue.labels.map(item=>item.name);
+        const assignees = !isEmpty(issue.assignees)? issue.assignees.map(item=>item.login): []
 
         if(!isEmpty(issue.labels) && labelsToSkip.includes(issue.labels[0].name)){
             return
@@ -98,9 +101,9 @@ await Promise.all(repos.map(async (repo) => {
             repo, 
             state: issue.state,
             creator: issue.user.login,
-            assignees: !isEmpty(issue.assignees)? issue.assignees.map(item=>item.login).join(", "): "",
-            message: issue.title.replace(/\r?\n|\r/gm, " "),
-            labels: issue.labels.map(item=>item.name).join(", "),
+            assignees: assignees.join(", "),
+            message: clearNewlines(issue.title),
+            labels: labels.join(", "),
             created_at: friendlyDate(issue.created_at),
             updated_at: friendlyDate(issue.updated_at), 
             closed_at: friendlyDate(issue.closed_at),
@@ -109,6 +112,10 @@ await Promise.all(repos.map(async (repo) => {
             url: issue.html_url,
             duration
         })
+
+        if(labels.includes("bug")){
+            ++stats.issues_bugs
+        }
 
         if(issue.state=="closed"){
             if(!isEmpty(issue.assignees) && issue.assignees.length>1){

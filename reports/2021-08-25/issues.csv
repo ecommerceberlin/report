@@ -1,8 +1,8 @@
 "repo","state","creator","assignees","message","labels","created_at","updated_at","closed_at","comments","milestone","url","duration"
+"eventjuicer/services","closed","jprzybylski4","","February 9th announcement emails ","","2021-08-13","2021-08-16","2021-08-16",0,"","https://github.com/eventjuicer/services/pull/24",4327
 "ecommerceberlin/targiehandlu.pl","closed","az","az","fix forms' textinput and onChange validation - use debounce function","enhancement","2021-08-19","2021-08-19","2021-08-19",0,"","https://github.com/ecommerceberlin/targiehandlu.pl/issues/93",42
 "ecommerceberlin/ecommerceberlin.com","closed","jprzybylski4","","Legal files update","","2021-08-16","2021-08-17","2021-08-17",1,"","https://github.com/ecommerceberlin/ecommerceberlin.com/pull/56",955
 "ecommerceberlin/ecommerceberlin.com","closed","az","jprzybylski4","confirm submission categories","question","2021-08-12","2021-08-16","2021-08-16",2,"CFP","https://github.com/ecommerceberlin/ecommerceberlin.com/issues/54",5577
-"eventjuicer/services","closed","jprzybylski4","","February 9th announcement emails ","","2021-08-13","2021-08-16","2021-08-16",0,"","https://github.com/eventjuicer/services/pull/24",4327
 "ecommerceberlin/admin","closed","az","az","tickets: show/quick preview counts in cancelled orders","bug","2021-08-25","2021-08-25","2021-08-25",1,"Migration Step 1","https://github.com/ecommerceberlin/admin/issues/52",8
 "ecommerceberlin/admin","closed","az","az","tickets: list view sorting - sort by ticket status (3,2,1,0)","api, tickets","2021-08-24","2021-08-24","2021-08-24",1,"Migration Step 1","https://github.com/ecommerceberlin/admin/issues/32",492
 "ecommerceberlin/admin","closed","az","az","tickets (api) move ticket status logic to API endpoint","api, tickets","2021-08-24","2021-08-24","2021-08-24",1,"Migration Step 1","https://github.com/ecommerceberlin/admin/issues/51",12
