@@ -48,7 +48,10 @@ const octokit = new Octokit({ auth: process.env.GITHUB_PERSONAL_TOKEN });
 await Promise.all(repos.map(async (repo) => {
     
     const {data} = await octokit.request(
-        `GET /repos/${repo}/commits`, { since: dayjs().subtract(reporting_interval, 'day').toISOString() }
+        `GET /repos/${repo}/commits`, { 
+            since: dayjs().subtract(reporting_interval, 'day').toISOString(),
+            per_page: 100,
+        }
     );
 
     data.forEach(commit => commits.push({
@@ -65,6 +68,9 @@ await Promise.all(repos.map(async (repo) => {
     
     const {data} = await octokit.request(
         `GET /repos/${repo}/issues`, { 
+            filter: "all",
+            sort: "updated",
+            per_page: 100,
             since: dayjs().subtract(reporting_interval, 'day').toISOString(),
             state: "all"
          }
@@ -125,7 +131,9 @@ fs.writeFile(`${targetFolder}/commits.csv`, csvCommits, function(err) {
     console.log("Commits report saved!");
 }); 
 
-const csvIssues  = new Parser({fields: Object.keys(issues[0]) }).parse(issues);
+const sortedIssues = sortBy(issues, ["state"])
+
+const csvIssues  = new Parser({fields: Object.keys(issues[0]) }).parse(sortedIssues);
 
 fs.writeFile(`${targetFolder}/issues.csv`, csvIssues, function(err) {
     if(err) {
