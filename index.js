@@ -34,14 +34,17 @@ const labelsToSkip = ["dependencies"]
 
 const commits = [];
 const issues = [];
+
 const stats = {
     commits: 0,
-    issues_open: 0,
-    issues_closed: 0,
+    issues_single_open: 0,
+    issues_single_closed: 0,
+    issues_single_duration: 0,
     issues_touched: 0,
-    issues_duration: 0
+    issues_shared_open: 0,
+    issues_shared_closed: 0,
+    issues_shared_duration: 0
 }
-
 
 const octokit = new Octokit({ auth: process.env.GITHUB_PERSONAL_TOKEN });
 
@@ -94,29 +97,45 @@ await Promise.all(repos.map(async (repo) => {
             repo, 
             state: issue.state,
             creator: issue.user.login,
-            assignees: issue.assignees.map(item=>item.login).join(", "),
+            assignees: !isEmpty(issue.assignees)? issue.assignees.map(item=>item.login).join(", "): "",
             message: issue.title.replace(/\r?\n|\r/gm, " "),
             labels: issue.labels.map(item=>item.name).join(", "),
             created_at: friendlyDate(issue.created_at),
             updated_at: friendlyDate(issue.updated_at), 
             closed_at: friendlyDate(issue.closed_at),
-            comments: issue.comments,
+            comments: issue.comments || 0,
             milestone: "milestone" in issue && !isEmpty(issue.milestone)? issue.milestone.title: "",
             url: issue.html_url,
             duration
         })
 
         if(issue.state=="closed"){
-            ++stats.issues_closed
+            if(!isEmpty(issue.assignees) && issue.assignees.length>1){
+                ++stats.issues_shared_closed
+            }else{
+                ++stats.issues_single_closed
+            }
         }else{
-            ++stats.issues_open
+            if(!isEmpty(issue.assignees) && issue.assignees.length>1){
+                ++stats.issues_shared_open
+            }else{
+                ++stats.issues_single_open
+            }
         }
 
         // if(dayjs(issue.updated_at).isAfter(dayjs(issue.created_at))){
         //     ++stats.issues_touched
         // }
 
-        stats.issues_duration = stats.issues_duration + duration;
+        if(!isEmpty(issue.assignees)){
+            if( issue.assignees.length>1 ){
+                stats.issues_shared_duration = stats.issues_shared_duration + duration;
+            }else{
+                stats.issues_single_duration = stats.issues_single_duration + duration;
+            }
+        }
+
+      
     })
 
 }));
@@ -147,14 +166,18 @@ fs.writeFile(`${targetFolder}/issues.csv`, csvIssues, function(err) {
     }
     console.log("Issues report saved!");
 });
- 
+
 /** 
  * duration per issue closed in HOURS
  * 
 */
 
-if(stats.issues_closed && stats.issues_duration){
-    stats.issues_duration = Math.round(stats.issues_duration/60/stats.issues_closed);
+if(stats.issues_shared_closed && stats.issues_shared_duration){
+    stats.issues_shared_duration = Math.round(stats.issues_shared_duration/60/stats.issues_shared_closed);
+}
+
+if(stats.issues_single_closed && stats.issues_single_duration){
+    stats.issues_single_duration = Math.round(stats.issues_single_duration/60/stats.issues_single_closed);
 }
 
 fs.writeFile(`${targetFolder}/summary.json`, JSON.stringify(stats), function(err) {
