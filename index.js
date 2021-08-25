@@ -38,7 +38,8 @@ const stats = {
     commits: 0,
     issues_open: 0,
     issues_closed: 0,
-    issues_touched: 0
+    issues_touched: 0,
+    issues_duration: 0
 }
 
 
@@ -78,9 +79,16 @@ await Promise.all(repos.map(async (repo) => {
 
     data.forEach(issue => {
 
+        const duration = issue.closed_at? dayjs(issue.closed_at).diff(dayjs(issue.created_at), 'm'): 0;
+
         if(!isEmpty(issue.labels) && labelsToSkip.includes(issue.labels[0].name)){
             return
         }
+
+        if(duration > 28655){
+            return;
+        }
+
 
         issues.push({
             repo, 
@@ -95,22 +103,20 @@ await Promise.all(repos.map(async (repo) => {
             comments: issue.comments,
             milestone: "milestone" in issue && !isEmpty(issue.milestone)? issue.milestone.title: "",
             url: issue.html_url,
+            duration
         })
 
-        // console.log(issue)
-
-        switch(issue.state){
-            case "open":
-                ++stats.issues_open
-            break
-            case "closed":
-                ++stats.issues_closed
-            break
+        if(issue.state=="closed"){
+            ++stats.issues_closed
+        }else{
+            ++stats.issues_open
         }
 
-        if(dayjs(issue.updated_at).isAfter(dayjs(issue.created_at))){
-            ++stats.issues_touched
-        }
+        // if(dayjs(issue.updated_at).isAfter(dayjs(issue.created_at))){
+        //     ++stats.issues_touched
+        // }
+
+        stats.issues_duration = stats.issues_duration + duration;
     })
 
 }));
@@ -140,7 +146,16 @@ fs.writeFile(`${targetFolder}/issues.csv`, csvIssues, function(err) {
         return console.log(err);
     }
     console.log("Issues report saved!");
-}); 
+});
+ 
+/** 
+ * duration per issue closed in HOURS
+ * 
+*/
+
+if(stats.issues_closed && stats.issues_duration){
+    stats.issues_duration = Math.round(stats.issues_duration/60/stats.issues_closed);
+}
 
 fs.writeFile(`${targetFolder}/summary.json`, JSON.stringify(stats), function(err) {
     if(err) {
