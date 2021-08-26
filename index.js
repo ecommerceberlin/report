@@ -5,8 +5,12 @@ import {Parser} from 'json2csv'
 import fs from 'fs'
 import sortBy from 'lodash/sortBy.js' 
 import isEmpty from 'lodash/isEmpty.js'
-
+import minimist from 'minimist'
 dotenv.config()
+const args = minimist(process.argv.slice(2));
+
+
+
 
 const reporting_interval = 14; //days!
 
