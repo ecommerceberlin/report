@@ -17,3 +17,7 @@
 **issues_shared_duration:** 0
 
 **issues_bugs:** 1
+
+**billed_minutes:** 985
+
+**range:** 6 days

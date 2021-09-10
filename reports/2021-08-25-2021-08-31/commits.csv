@@ -1,41 +1,41 @@
-"date","repo","message"
-"2021-08-25","az/eventjuicer-api","tickets api endpoint outputs additional info about ticket groups $5$"
-"2021-08-25","az/eventjuicer-api","fixed sorting tickets"
-"2021-08-25","ecommerceberlin/admin","Delete RelatedParticipants.js"
-"2021-08-25","ecommerceberlin/admin","draft of quick lookup $60$"
-"2021-08-25","ecommerceberlin/admin","admin menu cleanups"
-"2021-08-25","ecommerceberlin/admin","added sentry monitoring  https://github.com/ecommerceberlin/admin/issues/54"
-"2021-08-25","ecommerceberlin/admin","show tags from ticket group, style fixes (role=dark blue, ticket group tag=blue, etc) $30$  https://github.com/ecommerceberlin/admin/issues/53"
-"2021-08-25","ecommerceberlin/site-components","remove console.log"
-"2021-08-25","eventjuicer/api-components","tickets api endpoint outputs additional info about ticket groups (name, tags) $30$  https://github.com/ecommerceberlin/admin/issues/49"
-"2021-08-25","eventjuicer/api-components","Update TicketsSold.php"
-"2021-08-25","eventjuicer/api-components","https://github.com/ecommerceberlin/admin/issues/52"
-"2021-08-25","eventjuicer/api-components","fixed handling low stock (status = 1)"
-"2021-08-26","az/eventjuicer-api","drafting ticket edit endpoint"
-"2021-08-26","ecommerceberlin/admin","added JSEditor $45$"
-"2021-08-26","ecommerceberlin/admin","drafting ticket edit view $180$"
-"2021-08-26","ecommerceberlin/admin","do not use https for local dev $5$"
-"2021-08-26","ecommerceberlin/targiehandlu.pl","/speaking optimized for conversion"
-"2021-08-27","az/eventjuicer-api","fixing filtering tickets $120$"
-"2021-08-27","az/eventjuicer-api","admin participants endpoint overhaul $180$"
-"2021-08-27","ecommerceberlin/admin","ticket related views cleanups $15$"
-"2021-08-27","ecommerceberlin/admin","participants related views cleanups $30$"
-"2021-08-27","ecommerceberlin/admin","fixing id_like requests $20$"
-"2021-08-27","eventjuicer/api-components","filter cancelled ticket participants $15$"
-"2021-08-27","eventjuicer/api-components","fixing filtering tickets"
-"2021-08-27","eventjuicer/api-components","admin participants overhaul related changes"
-"2021-08-28","az/eventjuicer-api","fixed showing ticket group $30$"
-"2021-08-28","az/eventjuicer-api","admin tickets - handle search queries $45$"
-"2021-08-28","ecommerceberlin/admin","refactored ticket list filters $30$"
-"2021-08-28","eventjuicer/api-components","handle searching in tickets"
-"2021-08-28","eventjuicer/api-components","possible to use criteria function"
-"2021-08-31","eventjuicer/services","Update teh20-all1.blade.php"
-"2021-08-31","eventjuicer/services","Update teh20-all1.blade.php"
-"2021-08-31","eventjuicer/services","Update teh20-all1.blade.php"
-"2021-08-31","eventjuicer/services","Update teh20-all1.blade.php"
-"2021-08-31","eventjuicer/services","Update ParticipantInviteMail.php"
-"2021-08-31","eventjuicer/services","Update GeneralReminder.php"
-"2021-08-31","eventjuicer/services","Update teh20-all1.blade.php"
-"2021-08-31","eventjuicer/services","fix path"
-"2021-08-31","eventjuicer/services","newsletter"
-"2021-08-31","eventjuicer/services","teh20 email"
+"date","repo","message","bill"
+"2021-08-25","az/eventjuicer-api","tickets api endpoint outputs additional info about ticket groups $5$",5
+"2021-08-25","az/eventjuicer-api","fixed sorting tickets",0
+"2021-08-25","ecommerceberlin/admin","Delete RelatedParticipants.js",0
+"2021-08-25","ecommerceberlin/admin","draft of quick lookup $60$",60
+"2021-08-25","ecommerceberlin/admin","admin menu cleanups",0
+"2021-08-25","ecommerceberlin/admin","added sentry monitoring  https://github.com/ecommerceberlin/admin/issues/54",0
+"2021-08-25","ecommerceberlin/admin","show tags from ticket group, style fixes (role=dark blue, ticket group tag=blue, etc) $30$  https://github.com/ecommerceberlin/admin/issues/53",30
+"2021-08-25","ecommerceberlin/site-components","remove console.log",0
+"2021-08-25","eventjuicer/api-components","tickets api endpoint outputs additional info about ticket groups (name, tags) $30$  https://github.com/ecommerceberlin/admin/issues/49",30
+"2021-08-25","eventjuicer/api-components","Update TicketsSold.php",0
+"2021-08-25","eventjuicer/api-components","https://github.com/ecommerceberlin/admin/issues/52",0
+"2021-08-25","eventjuicer/api-components","fixed handling low stock (status = 1)",0
+"2021-08-26","az/eventjuicer-api","drafting ticket edit endpoint",0
+"2021-08-26","ecommerceberlin/targiehandlu.pl","/speaking optimized for conversion",0
+"2021-08-26","ecommerceberlin/admin","added JSEditor $45$",45
+"2021-08-26","ecommerceberlin/admin","drafting ticket edit view $180$",180
+"2021-08-26","ecommerceberlin/admin","do not use https for local dev $5$",5
+"2021-08-27","az/eventjuicer-api","fixing filtering tickets $120$",0
+"2021-08-27","az/eventjuicer-api","admin participants endpoint overhaul $180$",180
+"2021-08-27","ecommerceberlin/admin","ticket related views cleanups $15$",0
+"2021-08-27","ecommerceberlin/admin","participants related views cleanups $30$",30
+"2021-08-27","ecommerceberlin/admin","fixing id_like requests $20$",0
+"2021-08-27","eventjuicer/api-components","filter cancelled ticket participants $15$",15
+"2021-08-27","eventjuicer/api-components","fixing filtering tickets",0
+"2021-08-27","eventjuicer/api-components","admin participants overhaul related changes",0
+"2021-08-28","az/eventjuicer-api","fixed showing ticket group $30$",30
+"2021-08-28","az/eventjuicer-api","admin tickets - handle search queries $45$",45
+"2021-08-28","ecommerceberlin/admin","refactored ticket list filters $30$",30
+"2021-08-28","eventjuicer/api-components","handle searching in tickets",0
+"2021-08-28","eventjuicer/api-components","possible to use criteria function",0
+"2021-08-31","eventjuicer/services","Update teh20-all1.blade.php",0
+"2021-08-31","eventjuicer/services","Update teh20-all1.blade.php",0
+"2021-08-31","eventjuicer/services","Update teh20-all1.blade.php",0
+"2021-08-31","eventjuicer/services","Update teh20-all1.blade.php",0
+"2021-08-31","eventjuicer/services","Update ParticipantInviteMail.php",0
+"2021-08-31","eventjuicer/services","Update GeneralReminder.php",0
+"2021-08-31","eventjuicer/services","Update teh20-all1.blade.php",0
+"2021-08-31","eventjuicer/services","fix path",0
+"2021-08-31","eventjuicer/services","newsletter",0
+"2021-08-31","eventjuicer/services","teh20 email",0

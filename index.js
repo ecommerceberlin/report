@@ -31,7 +31,7 @@ if("until" in args){
 
 
 const since = dayjs(args.since).startOf('day')
-
+const range = until.diff(since, "day")
 
 const repos = [
     "ecommerceberlin/ecommerceberlin.com",
@@ -50,7 +50,7 @@ const repos = [
 
 
 
-
+const billRegExp = /\$(?<minutes>\d+)\$/gi
 const dateFormat = "YYYY-MM-DD"
 const friendlyDate = (str) => str? dayjs(str).format(dateFormat): ""
 const dateRange = `${since.format(dateFormat)}-${until.format(dateFormat)}`
@@ -59,6 +59,13 @@ const labelsToSkip = ["dependencies"]
 
 const objectToMarkdown = (obj) => Object.keys(obj).map(key => `**${key}:** ${obj[key]}`).join("\n\n")
 const clearNewlines = (str) => str.replace(/\r?\n|\r/gm, " ")
+const parseBill = (msg) => {
+    const matches = billRegExp.exec(msg)
+    if(matches && matches.groups && "minutes" in matches.groups){
+        return parseInt(matches.groups.minutes)
+    }
+    return 0;
+}
 /**
  * no user config below
  */
@@ -76,7 +83,9 @@ const stats = {
     issues_shared_open: 0,
     issues_shared_closed: 0,
     issues_shared_duration: 0,
-    issues_bugs: 0
+    issues_bugs: 0,
+    billed_minutes: 0,
+    range: `${range} days`
 }
 
 const octokit = new Octokit({ auth: process.env.GITHUB_PERSONAL_TOKEN });
@@ -93,11 +102,18 @@ await Promise.all(repos.map(async (repo) => {
         }
     );
 
-    data.forEach(commit => commits.push({
+    data.forEach(commit => {
+        
+        const bill = parseBill(commit.commit.message)
+        stats.billed_minutes = stats.billed_minutes + bill
+
+        commits.push({
             date: friendlyDate(commit.commit.author.date), 
             repo, 
-            message: clearNewlines(commit.commit.message)
-    }))
+            message: clearNewlines(commit.commit.message),
+            bill
+        })
+    })
 
 }));
 
@@ -130,6 +146,9 @@ await Promise.all(repos.map(async (repo) => {
             return;
         }
 
+        const bill = parseBill(issue.title)
+
+        stats.billed_minutes = stats.billed_minutes + bill
 
         issues.push({
             repo, 
@@ -144,7 +163,8 @@ await Promise.all(repos.map(async (repo) => {
             comments: issue.comments || 0,
             milestone: "milestone" in issue && !isEmpty(issue.milestone)? issue.milestone.title: "",
             url: issue.html_url,
-            duration
+            duration,
+            bill
         })
 
         if(labels.includes("bug")){
