@@ -8,11 +8,30 @@ import isEmpty from 'lodash/isEmpty.js'
 import minimist from 'minimist'
 dotenv.config()
 const args = minimist(process.argv.slice(2));
+let until = dayjs();
+
+if(!("since" in args)){
+    console.error("--since must be defined")
+    process.exit()
+}
+
+if(!dayjs(args.since).isValid()){
+    console.error("--since must be in format YYYY-MM-DD")
+    process.exit()
+}
+
+if("until" in args){
+    if(!dayjs(args.until).isValid()){
+        console.error("--until must be in format YYYY-MM-DD")
+        process.exit()
+    }else{
+        until = dayjs(args.until).endOf("day")
+    }
+}
 
 
+const since = dayjs(args.since).startOf('day')
 
-
-const reporting_interval = 14; //days!
 
 const repos = [
     "ecommerceberlin/ecommerceberlin.com",
@@ -29,10 +48,13 @@ const repos = [
     // "targiehandlu/account.targiehandlu.pl" //we will be moving it to ecommerceberlin
 ]
 
+
+
+
 const dateFormat = "YYYY-MM-DD"
 const friendlyDate = (str) => str? dayjs(str).format(dateFormat): ""
-const curDate = dayjs().format(dateFormat);
-const targetFolder = `reports/${curDate}`
+const dateRange = `${since.format(dateFormat)}-${until.format(dateFormat)}`
+const targetFolder = `reports/${dateRange}`
 const labelsToSkip = ["dependencies"]
 
 const objectToMarkdown = (obj) => Object.keys(obj).map(key => `**${key}:** ${obj[key]}`).join("\n\n")
@@ -45,7 +67,7 @@ const commits = [];
 const issues = [];
 
 const stats = {
-    date: curDate,
+    date: dateRange,
     commits: 0,
     issues_single_open: 0,
     issues_single_closed: 0,
@@ -60,11 +82,13 @@ const stats = {
 const octokit = new Octokit({ auth: process.env.GITHUB_PERSONAL_TOKEN });
 
 
+
 await Promise.all(repos.map(async (repo) => {
     
     const {data} = await octokit.request(
         `GET /repos/${repo}/commits`, { 
-            since: dayjs().subtract(reporting_interval, 'day').toISOString(),
+            since: since.toISOString(),
+            until: until.toISOString(),
             per_page: 100,
         }
     );
@@ -86,7 +110,8 @@ await Promise.all(repos.map(async (repo) => {
             filter: "all",
             sort: "updated",
             per_page: 100,
-            since: dayjs().subtract(reporting_interval, 'day').toISOString(),
+            since: since.toISOString(),
+            //until: dayjs("until" in args && args.until).toISOString(),
             state: "all"
          }
     );
