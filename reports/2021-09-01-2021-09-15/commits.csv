@@ -1,0 +1,64 @@
+"date","repo","message","bill"
+"2021-09-01","ecommerceberlin/admin","ticket create view $60$",60
+"2021-09-01","ecommerceberlin/site-components","4.1.8",0
+"2021-09-01","ecommerceberlin/site-components","added new schema items",0
+"2021-09-01","eventjuicer/api-components","show unused tickets $15$",15
+"2021-09-01","az/eventjuicer-api","ticket filter unused, ticket create draft $15$",15
+"2021-09-01","az/eventjuicer-api","fixed regression",0
+"2021-09-01","ecommerceberlin/targiehandlu.pl","CFP profile edit $60$",0
+"2021-09-07","ecommerceberlin/site-components","4.1.9",0
+"2021-09-07","ecommerceberlin/site-components","fixed fatal error - when datasource is empty",0
+"2021-09-07","ecommerceberlin/site-components","highlighting of rows now made as an configurable option $15$",15
+"2021-09-07","ecommerceberlin/site-components","updating translations to more versatile $10$",0
+"2021-09-07","ecommerceberlin/site-components","fixed voting page linking $45$",45
+"2021-09-07","az/eventjuicer-api","enable voting",0
+"2021-09-07","az/eventjuicer-api","show ticketgroup",0
+"2021-09-07","ecommerceberlin/targiehandlu.pl","changed setting for /speaking",0
+"2021-09-07","ecommerceberlin/targiehandlu.pl","adding cfp voting pages",0
+"2021-09-07","ecommerceberlin/targiehandlu.pl","ESC 4.1.9",0
+"2021-09-07","ecommerceberlin/targiehandlu.pl","updated base libs $30$",30
+"2021-09-08","ecommerceberlin/site-components","4.1.11",0
+"2021-09-08","ecommerceberlin/site-components","customize HeadVote og template $120$ (billed prev commit)",120
+"2021-09-08","ecommerceberlin/site-components","added categories component",0
+"2021-09-08","ecommerceberlin/site-components","4.1.10",0
+"2021-09-08","ecommerceberlin/site-components","fixed linkedin button when tokens mismatch",0
+"2021-09-08","ecommerceberlin/targiehandlu.pl","added menu item and cfp vote button",0
+"2021-09-08","ecommerceberlin/targiehandlu.pl","added custom og template",0
+"2021-09-08","ecommerceberlin/targiehandlu.pl","layout fixes cfp categories",0
+"2021-09-08","ecommerceberlin/targiehandlu.pl"," added cfp categories icons",0
+"2021-09-08","ecommerceberlin/targiehandlu.pl","ESC 4.1.11",0
+"2021-09-08","ecommerceberlin/targiehandlu.pl","max votes 6",0
+"2021-09-08","ecommerceberlin/targiehandlu.pl","ESC 4.1.10",0
+"2021-09-08","ecommerceberlin/targiehandlu.pl","show voting button",0
+"2021-09-09","ecommerceberlin/site-components","4.1.13",0
+"2021-09-09","ecommerceberlin/site-components","fix responsiveness on vote categories page $30$",30
+"2021-09-09","ecommerceberlin/site-components","4.1.12",0
+"2021-09-09","ecommerceberlin/site-components","cleanup",0
+"2021-09-09","ecommerceberlin/site-components","resolving https://github.com/ecommerceberlin/targiehandlu.pl/issues/95 (fix responsiveness)",0
+"2021-09-09","ecommerceberlin/site-components","do not show add to cart ticket when ticket is not bookable $15$",15
+"2021-09-09","eventjuicer/services","Update teh20-all2.blade.php",0
+"2021-09-09","eventjuicer/services","email",0
+"2021-09-09","ecommerceberlin/targiehandlu.pl","showing speakers",0
+"2021-09-09","ecommerceberlin/targiehandlu.pl","4.1.13",0
+"2021-09-09","ecommerceberlin/targiehandlu.pl","4.1.12 + 1 changed icon",0
+"2021-09-10","ecommerceberlin/site-components","4.1.14",0
+"2021-09-10","ecommerceberlin/site-components","Update WidgetVoteStatus.js",0
+"2021-09-10","ecommerceberlin/site-components","widgetvotestatus overhaul $20$",20
+"2021-09-10","ecommerceberlin/site-components","removed votestatus as we will show in a dialog $15$",15
+"2021-09-10","ecommerceberlin/site-components","VoteStatus is now obsolete and removed $10$",0
+"2021-09-10","ecommerceberlin/site-components","removed clutter $5$",5
+"2021-09-10","ecommerceberlin/site-components","handle onVoted callback dialog $60$",60
+"2021-09-10","ecommerceberlin/site-components","votestatus overhaul (removed typography, etc) $10$",10
+"2021-09-10","ecommerceberlin/site-components","making alert component more flexible $5$",0
+"2021-09-10","eventjuicer/services","Update teh20-all2.blade.php",0
+"2021-09-10","eventjuicer/services","updated email msg",0
+"2021-09-10","ecommerceberlin/targiehandlu.pl","show salesmap on voting page",0
+"2021-09-10","ecommerceberlin/targiehandlu.pl","CFP related cleanups $240$",240
+"2021-09-10","ecommerceberlin/targiehandlu.pl","4.1.14",0
+"2021-09-10","ecommerceberlin/targiehandlu.pl","cleanups and bes lib update",0
+"2021-09-13","ecommerceberlin/ecommercegermanyawards.com","removing headline sponsor info from partners list",0
+"2021-09-13","ecommerceberlin/ecommercegermanyawards.com","changed event date $5$",5
+"2021-09-13","ecommerceberlin/ecommercegermanyawards.com","removing headline sponsor info $5$",5
+"2021-09-13","ecommerceberlin/ecommercegermanyawards.com","all legal-* files moved to plain markdown for better maintainability $60$",60
+"2021-09-13","ecommerceberlin/ecommercegermanyawards.com","added raw-loader for markdown files loading $15$",0
+"2021-09-13","ecommerceberlin/ecommercegermanyawards.com","updated base libs $15$",15
