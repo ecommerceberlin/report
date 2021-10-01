@@ -1,0 +1,63 @@
+"date","repo","message","bill"
+"2021-09-15","ecommerceberlin/ecommercegermanyawards.com","added chart sources (fixing white margin and sizing) $20$",20
+"2021-09-15","ecommerceberlin/ecommercegermanyawards.com","resolved https://github.com/ecommerceberlin/ecommercegermanyawards.com/issues/54 - showing multiple archive winners $90$",90
+"2021-09-15","ecommerceberlin/ecommercegermanyawards.com","cleanups",0
+"2021-09-15","ecommerceberlin/ecommercegermanyawards.com","solves https://github.com/ecommerceberlin/ecommercegermanyawards.com/issues/52 $5$",5
+"2021-09-15","ecommerceberlin/site-components","4.2.1",0
+"2021-09-15","ecommerceberlin/site-components","fixed custom filtering on WidgetContestantCompaniesArchiveWinners $30$",30
+"2021-09-15","ecommerceberlin/site-components","4.2.0",0
+"2021-09-15","ecommerceberlin/site-components","allow using old ecommerce module $10$",10
+"2021-09-15","eventjuicer/api-components","add event_id info for quicker filtering $10$",10
+"2021-09-15","eventjuicer/api-components","changed required fields",0
+"2021-09-15","ecommerceberlin/ecommerceberlin.com","Merge branch 'master' of https://github.com/ecommerceberlin/homepage",0
+"2021-09-15","ecommerceberlin/ecommerceberlin.com","re: https://github.com/ecommerceberlin/ecommerceberlin.com/issues/67 CFP-rvoting related pages overhaul $60$",60
+"2021-09-15","ecommerceberlin/ecommerceberlin.com","CFP submission data edit page $60$",0
+"2021-09-15","ecommerceberlin/ecommerceberlin.com","updating base libs $15$",15
+"2021-09-15","eventjuicer/services","fixes Type error: Too few arguments to function Eventjuicer\Services\Exhibitors\CompanyData::getLang()     , 0 passed in /u/apps/services/app/Console/Commands/PingWhenEmptyProfile.php",0
+"2021-09-16","ecommerceberlin/ecommercegermanyawards.com","added 2019 winners $15$ (admin work billed sep.)",15
+"2021-09-16","ecommerceberlin/ecommercegermanyawards.com","resolves https://github.com/ecommerceberlin/ecommercegermanyawards.com/issues/57 archive jurors $90$",90
+"2021-09-16","ecommerceberlin/ecommercegermanyawards.com","updating premium ticket group id $10$",0
+"2021-09-16","ecommerceberlin/ecommercegermanyawards.com","updating regform with current edition ticket id $10$",10
+"2021-09-16","ecommerceberlin/ecommercegermanyawards.com","fix",0
+"2021-09-16","ecommerceberlin/ecommercegermanyawards.com","update gfx in /about https://github.com/ecommerceberlin/ecommercegermanyawards.com/issues/56",0
+"2021-09-16","ecommerceberlin/site-components","4.2.2",0
+"2021-09-16","ecommerceberlin/site-components","migrating WidgetJurors to new datasource strategy $60$",60
+"2021-09-16","eventjuicer/api-components","fixes",0
+"2021-09-16","az/eventjuicer-api","added jurors_all endpoint $45$",45
+"2021-09-16","ecommerceberlin/ecommerceberlin.com","changed og template image for /speaking re: https://github.com/ecommerceberlin/ecommerceberlin.com/issues/61 $10$",10
+"2021-09-16","ecommerceberlin/ecommerceberlin.com","changed OG image template re: https://github.com/ecommerceberlin/ecommerceberlin.com/issues/57 $15$",0
+"2021-09-16","ecommerceberlin/ecommerceberlin.com","hiding VoteWithLinkedInButton https://github.com/ecommerceberlin/ecommerceberlin.com/issues/70 $5$",5
+"2021-09-16","eventjuicer/services","CFP emails (#25)  Send as Marta Masternak  ENG title: Call for Papers - become a speaker at the E-commerce Berlin Expo 2022!  DE title: Call for Papers - Teile dein Präsentationsvorschlag mit uns!  Co-authored-by: jprzybylski4 <infoguru@infogurus-MacBook-Air.local>",0
+"2021-09-17","eventjuicer/services","update",0
+"2021-09-17","eventjuicer/services","commands",0
+"2021-09-17","eventjuicer/services","teh20_upgrades",0
+"2021-09-22","ecommerceberlin/targiehandlu.pl","blocked voting button",0
+"2021-09-23","az/eventjuicer-api","disabled voting",0
+"2021-09-27","eventjuicer/api-components","promoninja params update",0
+"2021-09-27","eventjuicer/api-components","promoninja params update",0
+"2021-09-29","ecommerceberlin/site-components","4.2.5",0
+"2021-09-29","ecommerceberlin/site-components","minimize language button $20$",20
+"2021-09-29","ecommerceberlin/site-components","4.2.4",0
+"2021-09-29","ecommerceberlin/site-components","mark booths are now passed as props $10$",10
+"2021-09-29","ecommerceberlin/site-components","fixes https://github.com/ecommerceberlin/targiehandlu.pl/issues/97 $15$",15
+"2021-09-29","ecommerceberlin/site-components","fixed error - bad typography attribute $10$",0
+"2021-09-29","ecommerceberlin/site-components","4.2.3",0
+"2021-09-29","ecommerceberlin/site-components","fixed booth marked on company profile page / resolves https://github.com/ecommerceberlin/targiehandlu.pl/issues/91 $45$",45
+"2021-09-29","ecommerceberlin/targiehandlu.pl","4.2.3",0
+"2021-09-30","ecommerceberlin/site-components","use logotype instead of text website name $30$",0
+"2021-09-30","ecommerceberlin/site-components","4.2.6",0
+"2021-09-30","ecommerceberlin/site-components","langselect fix - show currently selected lang $10$",10
+"2021-09-30","eventjuicer/api-components","og related update",0
+"2021-09-30","eventjuicer/api-components","updated og image template",0
+"2021-09-30","eventjuicer/api-components","updated prizes pool",0
+"2021-09-30","ecommerceberlin/targiehandlu.pl","opengraph updates, module updates $60$",60
+"2021-09-30","az/eventjuicer-api","voting started",0
+"2021-09-30","az/eventjuicer-api","added ranking endpoint",0
+"2021-09-30","ecommerceberlin/ecommerceberlin.com","vote button revelead $5$",0
+"2021-09-30","ecommerceberlin/ecommerceberlin.com","updating base libs and setting up logotype header $15$",15
+"2021-09-30","ecommerceberlin/ecommerceberlin.com","gfx",0
+"2021-09-30","eventjuicer/services","fixes",0
+"2021-09-30","eventjuicer/services","fixes",0
+"2021-09-30","eventjuicer/services","promonina teh20",0
+"2021-09-30","eventjuicer/services","Update CompanyNewsletterController.php",0
+"2021-09-30","eventjuicer/services","template emails",0
