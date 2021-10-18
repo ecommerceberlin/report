@@ -1,0 +1,159 @@
+"date","repo","message","bill"
+"2021-10-01","eventjuicer/api-components","cleanups",0
+"2021-10-01","eventjuicer/api-components","handle custom linkedin apps $60$",60
+"2021-10-01","eventjuicer/api-components","opengraph template lang fix $10$",0
+"2021-10-01","eventjuicer/api-components","fixed opengraph template lang error $10$",10
+"2021-10-01","eventjuicer/api-components","fixed opengraph custom image bug $15$",0
+"2021-10-01","eventjuicer/api-components","fix creatives image check $30$",30
+"2021-10-01","az/eventjuicer-api","PlannerController and planner endpoint",0
+"2021-10-01","az/eventjuicer-api","fixed redirect err",0
+"2021-10-01","az/eventjuicer-api","show more info about linkedin err $5$",5
+"2021-10-01","az/eventjuicer-api","refactored linkedin oauth $45$",0
+"2021-10-01","az/eventjuicer-api","comment",0
+"2021-10-01","az/eventjuicer-api","check linked app ids.... $30$",30
+"2021-10-01","ecommerceberlin/ecommerceberlin.com","4.2.9",0
+"2021-10-01","ecommerceberlin/ecommerceberlin.com","4.2.8",0
+"2021-10-01","ecommerceberlin/ecommerceberlin.com","rem package-lock.json",0
+"2021-10-01","ecommerceberlin/ecommerceberlin.com","Update index.js",0
+"2021-10-01","ecommerceberlin/ecommerceberlin.com","fix",0
+"2021-10-01","ecommerceberlin/ecommerceberlin.com","added vote menu item $5$",5
+"2021-10-01","ecommerceberlin/ecommerceberlin.com","reorganizing HP $15$",0
+"2021-10-01","ecommerceberlin/targiehandlu.pl","testing linkedin login",0
+"2021-10-01","ecommerceberlin/targiehandlu.pl","added api cache",0
+"2021-10-01","ecommerceberlin/site-components","4.2.11",0
+"2021-10-01","ecommerceberlin/site-components","Update LinkedInLogin.js",0
+"2021-10-01","ecommerceberlin/site-components","4.2.10",0
+"2021-10-01","ecommerceberlin/site-components","linkedinlogin button",0
+"2021-10-01","ecommerceberlin/site-components","4.2.9",0
+"2021-10-01","ecommerceberlin/site-components","fixed proxying via cache",0
+"2021-10-01","ecommerceberlin/site-components","4.2.8",0
+"2021-10-01","ecommerceberlin/site-components","fix error",0
+"2021-10-02","eventjuicer/api-components","added creatives",0
+"2021-10-02","az/eventjuicer-api","prizes endpoint",0
+"2021-10-03","eventjuicer/api-components","promoninja prizes moved to db $60$",60
+"2021-10-03","az/eventjuicer-api","fixed prizes public endpoint",0
+"2021-10-03","az/eventjuicer-api","fixed resource prefix",0
+"2021-10-03","ecommerceberlin/targiehandlu.pl","4.3.1",0
+"2021-10-03","ecommerceberlin/targiehandlu.pl","fixed missing icons $20$",20
+"2021-10-03","ecommerceberlin/targiehandlu.pl","removing react-icons",0
+"2021-10-03","ecommerceberlin/targiehandlu.pl","exhibitors promo subpage",0
+"2021-10-03","ecommerceberlin/targiehandlu.pl","updating base libs, tweaking code to BCs $30#",0
+"2021-10-03","ecommerceberlin/site-components","4.3.5",0
+"2021-10-03","ecommerceberlin/site-components","partner creatives components cleanups $60$",60
+"2021-10-03","ecommerceberlin/site-components","copy to clipboard",0
+"2021-10-03","ecommerceberlin/site-components","4.3.4",0
+"2021-10-03","ecommerceberlin/site-components","partnerperformance components tweaks $60$",60
+"2021-10-03","ecommerceberlin/site-components","4.3.3",0
+"2021-10-03","ecommerceberlin/site-components","partnerperformance cleanups",0
+"2021-10-03","ecommerceberlin/site-components","4.3.2",0
+"2021-10-03","ecommerceberlin/site-components","PartnerPerformance tweaks $30$",30
+"2021-10-03","ecommerceberlin/site-components","added prizes icons $10$",0
+"2021-10-03","ecommerceberlin/site-components","4.3.1",0
+"2021-10-03","ecommerceberlin/site-components","fixed eventinfo typography $15$",15
+"2021-10-03","ecommerceberlin/site-components","fix material-ui grid component attribute $5$",5
+"2021-10-03","ecommerceberlin/site-components","fixed icons $10$",0
+"2021-10-03","ecommerceberlin/site-components","4.3.0",0
+"2021-10-03","ecommerceberlin/site-components","removing links to non-existing sub pages",0
+"2021-10-03","ecommerceberlin/site-components","Update LinkedInLogin.js",0
+"2021-10-03","ecommerceberlin/site-components","new component PartnerPerformance $180$",180
+"2021-10-03","ecommerceberlin/site-components","better handling of api proxy $10$",0
+"2021-10-03","ecommerceberlin/site-components","material-ui attribute fixes $10$",10
+"2021-10-03","ecommerceberlin/site-components","switching to material icons $15$",0
+"2021-10-03","ecommerceberlin/site-components","updated base libs $45$",45
+"2021-10-03","ecommerceberlin/site-components","handle custom linkedinapps $15$",15
+"2021-10-03","ecommerceberlin/site-components","useDatasource hook overhaul $45$",0
+"2021-10-04","eventjuicer/api-components","show slug in order to build profile URL",0
+"2021-10-04","eventjuicer/services","pingwhenemptyemail tweaks",0
+"2021-10-04","eventjuicer/services","Update PingWhenEmptyProfileEmail.php",0
+"2021-10-04","eventjuicer/services","fix",0
+"2021-10-05","ecommerceberlin/site-components","4.3.10",0
+"2021-10-05","ecommerceberlin/site-components","added raw link buttons $10$",10
+"2021-10-05","ecommerceberlin/site-components","4.3.9",0
+"2021-10-05","ecommerceberlin/site-components","final touches to promoninja 2.0 $60$",60
+"2021-10-05","ecommerceberlin/site-components","4.3.8",0
+"2021-10-05","ecommerceberlin/site-components","small fixes",0
+"2021-10-05","ecommerceberlin/site-components","4.3.7",0
+"2021-10-05","ecommerceberlin/site-components","final touchaps $90$",90
+"2021-10-05","ecommerceberlin/site-components","4.3.6",0
+"2021-10-05","ecommerceberlin/site-components","partnerperformance overhaul",0
+"2021-10-05","eventjuicer/services","Update teh20-calendar-pl.blade.php",0
+"2021-10-05","eventjuicer/services","fix",0
+"2021-10-05","eventjuicer/services","calendar",0
+"2021-10-05","eventjuicer/services","final fixes",0
+"2021-10-05","eventjuicer/services","fixes",0
+"2021-10-05","eventjuicer/services","Update teh20-promoninja2-pl.blade.php",0
+"2021-10-05","eventjuicer/services","promoninja2",0
+"2021-10-06","ecommerceberlin/site-components","admin report now uses useDatasource $15$",15
+"2021-10-06","eventjuicer/services","fix",0
+"2021-10-06","eventjuicer/services","email dodaj repsów",0
+"2021-10-06","eventjuicer/services","fixed defaultLang",0
+"2021-10-06","eventjuicer/services","promoninja ping",0
+"2021-10-06","eventjuicer/services","logistics info",0
+"2021-10-06","eventjuicer/services","logistics",0
+"2021-10-07","ecommerceberlin/ecommerceberlin.com","changed email address",0
+"2021-10-07","ecommerceberlin/targiehandlu.pl","added schedule",0
+"2021-10-07","ecommerceberlin/targiehandlu.pl","enabled all stages",0
+"2021-10-07","ecommerceberlin/targiehandlu.pl","schedule",0
+"2021-10-07","ecommerceberlin/site-components","4.3.11",0
+"2021-10-07","ecommerceberlin/site-components","schedule related tweaks $90$",90
+"2021-10-07","eventjuicer/services","meetups event name / date fix",0
+"2021-10-07","eventjuicer/services","Update teh20-all-agenda.blade.php",0
+"2021-10-07","eventjuicer/services","fix",0
+"2021-10-07","eventjuicer/services","email to visitors re agenda",0
+"2021-10-07","eventjuicer/services","promoninja3",0
+"2021-10-07","eventjuicer/services","promoninja3",0
+"2021-10-08","eventjuicer/api-components","changed meetup limits $10$",10
+"2021-10-08","eventjuicer/api-components","added nip",0
+"2021-10-08","eventjuicer/services","Update teh20-meetups-pl.blade.php",0
+"2021-10-08","eventjuicer/services","meetups email",0
+"2021-10-08","eventjuicer/services","fixes",0
+"2021-10-08","eventjuicer/services","added company name",0
+"2021-10-08","eventjuicer/services","added link to exhibitor's profile",0
+"2021-10-08","eventjuicer/services","cleanups",0
+"2021-10-08","eventjuicer/services","resolves https://sentry.io/organizations/eventjuicer/issues/2696746886/?project=236218&query=is%3Aunresolved $10$",10
+"2021-10-09","ecommerceberlin/targiehandlu.pl","fb ads",0
+"2021-10-11","ecommerceberlin/ecommerceberlin.com","added selected",0
+"2021-10-11","ecommerceberlin/ecommerceberlin.com","show CFP votes $10$",10
+"2021-10-11","ecommerceberlin/ecommerceberlin.com","updated base libs $20$",0
+"2021-10-11","ecommerceberlin/targiehandlu.pl","reverted venues",0
+"2021-10-11","eventjuicer/services","reps list final",0
+"2021-10-11","eventjuicer/services","reverted meetups cron",0
+"2021-10-12","ecommerceberlin/targiehandlu.pl","added new bg for presenters images",0
+"2021-10-12","eventjuicer/services","Update teh20-all-agenda2.blade.php",0
+"2021-10-12","eventjuicer/services","Update teh20-all-agenda2.blade.php",0
+"2021-10-12","eventjuicer/services","Update teh20-all-agenda2.blade.php",0
+"2021-10-12","eventjuicer/services","Update teh20-all-agenda2.blade.php",0
+"2021-10-12","eventjuicer/services","Create teh20-all-agenda2.blade.php",0
+"2021-10-12","eventjuicer/services","meetups",0
+"2021-10-14","ecommerceberlin/targiehandlu.pl","raport i agenda fix",0
+"2021-10-14","eventjuicer/services","im gonna cry!",0
+"2021-10-14","eventjuicer/services","Update teh20-promo-pl.blade.php",0
+"2021-10-14","eventjuicer/services","fix",0
+"2021-10-14","eventjuicer/services","mailing",0
+"2021-10-15","eventjuicer/api-components","change qrcode data",0
+"2021-10-15","az/eventjuicer-api","added scan endpoint",0
+"2021-10-15","az/eventjuicer-api","fixed ticket link",0
+"2021-10-15","az/eventjuicer-api","teh20 ticketdownload",0
+"2021-10-15","az/eventjuicer-api","fake routes",0
+"2021-10-15","ecommerceberlin/targiehandlu.pl","added list of current exhbitors",0
+"2021-10-15","ecommerceberlin/targiehandlu.pl","quick registration button",0
+"2021-10-15","ecommerceberlin/targiehandlu.pl","vipreg fixes",0
+"2021-10-15","ecommerceberlin/targiehandlu.pl","fixed og teaser",0
+"2021-10-15","ecommerceberlin/targiehandlu.pl","fixed typo!",0
+"2021-10-15","ecommerceberlin/targiehandlu.pl","fixed opengraph! $30$",30
+"2021-10-15","ecommerceberlin/targiehandlu.pl","ticket download $120$",0
+"2021-10-15","ecommerceberlin/site-components","4.3.14",0
+"2021-10-15","ecommerceberlin/site-components","WidgetExhibitorsAvatarlist overhaul $45$",45
+"2021-10-15","ecommerceberlin/site-components","fixed avatarlist cell linking $10$",0
+"2021-10-15","ecommerceberlin/site-components","4.3.13",0
+"2021-10-15","ecommerceberlin/site-components","styling fixes $10$",10
+"2021-10-15","ecommerceberlin/site-components","4.3.12",0
+"2021-10-15","ecommerceberlin/site-components","not needed here",0
+"2021-10-15","ecommerceberlin/site-components","Invite widget overhaul $45$",45
+"2021-10-15","ecommerceberlin/site-components","added temp resources to handle new datasource hook $5$",5
+"2021-10-15","eventjuicer/services","final old visitors email",0
+"2021-10-15","eventjuicer/services","vipreg",0
+"2021-10-15","eventjuicer/services","aded vip info",0
+"2021-10-15","eventjuicer/services","fixed URL to ticket download",0
+"2021-10-15","eventjuicer/services","added ticket reminder email $60$",60
+"2021-10-15","eventjuicer/services","updated ticket urls $30$",0
