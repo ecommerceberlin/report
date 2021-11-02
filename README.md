@@ -1,10 +1,10 @@
 # how to run
 
-npm install
+```npm install
 
 cp .env.example .env
 
-open .env, editGITHUB_PERSONAL_TOKEN, save
+open .env, edit GITHUB_PERSONAL_TOKEN, save
 
-run node ./index.js in console
+run node ./index.js --since=YYYY-MM-DD --until=YYYY-MM-DD in console ```
 
