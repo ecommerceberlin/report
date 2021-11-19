@@ -1,0 +1,24 @@
+"date","repo","message","bill"
+"2021-11-03","eventjuicer/services","Additional Services Emails (#26)  * CFP emails  Send as Marta Masternak  ENG title: Call for Papers - become a speaker at the E-commerce Berlin Expo 2022!  DE title: Call for Papers - Teile dein Präsentationsvorschlag mit uns!  * Additional Services emails  Subjects: ENG: E-commerce Berlin Expo - additional services reminder DE: E-commerce Berlin Expo - Erinnerung an zusätzlichen Standdiensten  Co-authored-by: jprzybylski4 <infoguru@infogurus-MacBook-Air.local>",0
+"2021-11-04","eventjuicer/services","fixes",0
+"2021-11-04","eventjuicer/services","ebe6 additional services email $30$",30
+"2021-11-09","az/eventjuicer-api","Update CompanyController.php",0
+"2021-11-09","az/eventjuicer-api","relax contraints when preloading company $30$",30
+"2021-11-09","ecommerceberlin/ecommerceberlin.com","build error $30$  Build error occurred 10:36:55.799	Error: A required parameter (keyword) was not provided as a string in getStaticPaths for /exhibitor-categories/[keyword]",30
+"2021-11-09","ecommerceberlin/ecommerceberlin.com","redirects on company profiles  resolves https://github.com/ecommerceberlin/ecommerceberlin.com/issues/86",0
+"2021-11-09","ecommerceberlin/ecommercegermanyawards.com","changed bg video  resolves https://github.com/ecommerceberlin/ecommercegermanyawards.com/issues/18",0
+"2021-11-09","ecommerceberlin/ecommercegermanyawards.com","change og template  resolves https://github.com/ecommerceberlin/ecommercegermanyawards.com/issues/65",0
+"2021-11-09","ecommerceberlin/ecommercegermanyawards.com","added project logotype $20$  resolves https://github.com/ecommerceberlin/ecommercegermanyawards.com/issues/77",20
+"2021-11-09","ecommerceberlin/ecommercegermanyawards.com","changed support person details  resolves https://github.com/ecommerceberlin/ecommercegermanyawards.com/issues/78",0
+"2021-11-10","ecommerceberlin/ecommerceberlin.com","changed vip reg ticket id $10$",0
+"2021-11-10","ecommerceberlin/targiehandlu.pl","updated legal",0
+"2021-11-10","ecommerceberlin/targiehandlu.pl","	Error: A required parameter (keyword) was not provided as a string in getStaticPaths for /exhibitor-categories/[keyword]",0
+"2021-11-10","ecommerceberlin/targiehandlu.pl","fixes",0
+"2021-11-10","ecommerceberlin/targiehandlu.pl","added new legal page $30$",30
+"2021-11-10","ecommerceberlin/site-components","4.3.30",0
+"2021-11-10","ecommerceberlin/site-components","simple company card $180$",180
+"2021-11-10","ecommerceberlin/site-components","added new hook to get single record $30$",30
+"2021-11-10","ecommerceberlin/ecommercegermanyawards.com","added sponsors subpage $60$",0
+"2021-11-10","eventjuicer/services","fixed translate errors",0
+"2021-11-10","eventjuicer/services","salespreinfo",0
+"2021-11-10","eventjuicer/services","ebe5 badprofile",0
