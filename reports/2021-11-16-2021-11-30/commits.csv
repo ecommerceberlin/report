@@ -1,0 +1,76 @@
+"date","repo","message","bill"
+"2021-11-16","ecommerceberlin/site-components","4.3.31",0
+"2021-11-16","ecommerceberlin/site-components","handle more ecommerce configuration $30$",30
+"2021-11-16","ecommerceberlin/site-components","updated boothstyle mapping and fix no key in map $15$",15
+"2021-11-16","ecommerceberlin/targiehandlu.pl","updated HP",0
+"2021-11-16","ecommerceberlin/targiehandlu.pl","updated translations, settings for teh21 $45$",45
+"2021-11-16","ecommerceberlin/targiehandlu.pl","updated settings for teh21 sales",0
+"2021-11-16","eventjuicer/api-components","removed ebe reference",0
+"2021-11-16","eventjuicer/services","fixes",0
+"2021-11-16","eventjuicer/services","Update AwardMessage.php",0
+"2021-11-16","eventjuicer/services","Update AwardMessage.php",0
+"2021-11-16","eventjuicer/services","fixed emails",0
+"2021-11-16","eventjuicer/services","Update AwardMessage.php",0
+"2021-11-16","eventjuicer/services","Update AwardMessage.php",0
+"2021-11-16","eventjuicer/services","Update AwardMessage.php",0
+"2021-11-16","eventjuicer/services","Update AwardMessage.php",0
+"2021-11-16","eventjuicer/services","Update AwardMessage.php",0
+"2021-11-16","eventjuicer/services","teh21 emails",0
+"2021-11-17","ecommerceberlin/promo.targiehandlu.pl","Update package.json",0
+"2021-11-17","ecommerceberlin/promo.targiehandlu.pl","reverted promo ninja",0
+"2021-11-17","ecommerceberlin/site-components","enhanced showing ticket booking dates $30$",30
+"2021-11-17","ecommerceberlin/site-components","do not proxy/cache some crucial resources $15$",15
+"2021-11-17","ecommerceberlin/site-components","4.3.33",0
+"2021-11-17","ecommerceberlin/site-components","fixed sorting issues $10$",10
+"2021-11-17","ecommerceberlin/site-components","added sorting dir to possible datasource filters $15$",15
+"2021-11-17","ecommerceberlin/site-components","4.3.32",0
+"2021-11-17","ecommerceberlin/site-components","added forcing event_id $30$",30
+"2021-11-17","az/eventjuicer-api","added new ecom event to sync website $30$",30
+"2021-11-17","ecommerceberlin/targiehandlu.pl","Update legal-2021-11-10.md",0
+"2021-11-17","eventjuicer/api-components","limit slack notifications to organizer_id = 1",0
+"2021-11-17","eventjuicer/api-components","fix fatal error $10$  Argument 1 passed to Eventjuicer\Events\NewItemPurchased::__construct() must be an instance of Illuminate\Support\Model, instance of Eventjuicer\Models\Participant given,",10
+"2021-11-17","eventjuicer/api-components","new ecom-related event added $45$",45
+"2021-11-17","eventjuicer/services","ebe6 emails",0
+"2021-11-17","eventjuicer/services","EGA submission emails (#28)  * CFP emails  Send as Marta Masternak  ENG title: Call for Papers - become a speaker at the E-commerce Berlin Expo 2022!  DE title: Call for Papers - Teile dein Präsentationsvorschlag mit uns!  * Additional Services emails  Subjects: ENG: E-commerce Berlin Expo - additional services reminder DE: E-commerce Berlin Expo - Erinnerung an zusätzlichen Standdiensten  * EGA submission emails  Co-authored-by: jprzybylski4 <infoguru@infogurus-MacBook-Air.local>",0
+"2021-11-18","ecommerceberlin/site-components","4.3.35",0
+"2021-11-18","ecommerceberlin/site-components","added cart blocking info $15$",15
+"2021-11-18","ecommerceberlin/site-components","4.3.34",0
+"2021-11-18","ecommerceberlin/site-components","tweaks - ticketremaining info $30$",30
+"2021-11-18","ecommerceberlin/site-components","for future",0
+"2021-11-18","ecommerceberlin/site-components","fixed passing arrays instead of integers $15$",15
+"2021-11-18","ecommerceberlin/site-components","decorate cheapest option if more than 1 tickets are available $60$",60
+"2021-11-18","ecommerceberlin/site-components","enhanced websocket updater to use new backend event $60$",0
+"2021-11-18","ecommerceberlin/targiehandlu.pl","do show ticket ends",0
+"2021-11-18","ecommerceberlin/targiehandlu.pl","do not show end days",0
+"2021-11-18","ecommerceberlin/targiehandlu.pl","4.3.35",0
+"2021-11-18","eventjuicer/api-components","Update SavePaidOrder.php",0
+"2021-11-18","eventjuicer/api-components","fixes",0
+"2021-11-18","eventjuicer/api-components","Update SavesPaidOrder.php",0
+"2021-11-18","eventjuicer/api-components","Update SavePaidOrder.php",0
+"2021-11-18","eventjuicer/api-components","Update SavePaidOrder.php",0
+"2021-11-18","eventjuicer/api-components","Update SavePaidOrder.php",0
+"2021-11-18","eventjuicer/services","eb remidner",0
+"2021-11-18","eventjuicer/services","teh21 top30 reminder",0
+"2021-11-19","az/eventjuicer-api","work in progress",0
+"2021-11-19","ecommerceberlin/event.ecommerceberlin.com","up",0
+"2021-11-19","ecommerceberlin/admin","admin 2.0 draft work",0
+"2021-11-19","eventjuicer/api-components","Create AllExhibitorsReps.php",0
+"2021-11-22","ecommerceberlin/ecommercegermanyawards.com","profile edit page for EGA sugmissions $60$",60
+"2021-11-22","ecommerceberlin/site-components","4.3.37",0
+"2021-11-22","ecommerceberlin/site-components","4.3.36",0
+"2021-11-22","ecommerceberlin/site-components","Update package-lock.json",0
+"2021-11-22","ecommerceberlin/site-components","update profile link update",0
+"2021-11-22","ecommerceberlin/targiehandlu.pl","added sales map on HP",0
+"2021-11-22","ecommerceberlin/targiehandlu.pl","updated base libs $30$",30
+"2021-11-22","ecommerceberlin/targiehandlu.pl","Update teh.code-workspace",0
+"2021-11-30","ecommerceberlin/ecommercegermanyawards.com","removing regform from categories subpage $5$",5
+"2021-11-30","ecommerceberlin/ecommercegermanyawards.com","added menu option to sponsors subpage $5$",0
+"2021-11-30","ecommerceberlin/ecommercegermanyawards.com","removing regform from hp $5$",5
+"2021-11-30","ecommerceberlin/ecommercegermanyawards.com","config awards timeline $15$",0
+"2021-11-30","ecommerceberlin/ecommercegermanyawards.com","added vote option to burger menu",0
+"2021-11-30","ecommerceberlin/ecommercegermanyawards.com","fixed voting category page error  resolves https://github.com/ecommerceberlin/ecommercegermanyawards.com/issues/83",0
+"2021-11-30","ecommerceberlin/ecommercegermanyawards.com","markdown cleanups $15$  resolves https://github.com/ecommerceberlin/ecommercegermanyawards.com/issues/85",15
+"2021-11-30","ecommerceberlin/site-components","4.3.38",0
+"2021-11-30","ecommerceberlin/site-components","fix voting categories layout $45$",45
+"2021-11-30","ecommerceberlin/site-components","added additional check for mybutton param $15$",15
+"2021-11-30","ecommerceberlin/site-components","fixing hooks related bug $60$",0
