@@ -1,0 +1,57 @@
+"date","repo","message","bill"
+"2021-12-01","ecommerceberlin/event.targiehandlu.pl","Update package.json",0
+"2021-12-01","ecommerceberlin/site-components","4.4.0",0
+"2021-12-01","ecommerceberlin/site-components","Update GridBenefitsItem.js",0
+"2021-12-01","ecommerceberlin/site-components","fixed infinite loop error when calling api $45$",45
+"2021-12-01","ecommerceberlin/site-components","4.3.39",0
+"2021-12-01","ecommerceberlin/site-components","add buttons to icongrid widget $60$  resolves https://github.com/ecommerceberlin/ecommercegermanyawards.com/issues/12",60
+"2021-12-01","ecommerceberlin/ecommerceberlin.com","use_old_ecommerce_module = 1 $15$",0
+"2021-12-01","ecommerceberlin/ecommerceberlin.com","Merge branch 'master' of https://github.com/ecommerceberlin/ecommerceberlin.com",0
+"2021-12-01","ecommerceberlin/ecommerceberlin.com","upgrading base libs to resolve datasource hook leak",0
+"2021-12-01","az/eventjuicer-api","Update VotingStatusController.php",0
+"2021-12-01","eventjuicer/services","force defining a role",0
+"2021-12-01","ecommerceberlin/ecommercegermanyawards.com","re-added winners widget after datasource fix $20$",0
+"2021-12-01","ecommerceberlin/ecommercegermanyawards.com","remove faulty widget  II $60$",60
+"2021-12-01","ecommerceberlin/ecommercegermanyawards.com","remove faulty widget",0
+"2021-12-01","ecommerceberlin/ecommercegermanyawards.com","fix max_votes incoherence $10$",10
+"2021-12-01","ecommerceberlin/ecommercegermanyawards.com","added voting button",0
+"2021-12-01","ecommerceberlin/ecommercegermanyawards.com","list of voting categories overhaul $30$",30
+"2021-12-01","ecommerceberlin/ecommercegermanyawards.com","fix cache time",0
+"2021-12-01","ecommerceberlin/ecommercegermanyawards.com","updated HP for voting context $15$",15
+"2021-12-01","ecommerceberlin/ecommercegermanyawards.com","added buttons to the list of categories $15$",15
+"2021-12-01","ecommerceberlin/ecommercegermanyawards.com","redirect from /vote/categories to /vote $10$",0
+"2021-12-01","ecommerceberlin/targiehandlu.pl","updated base libs to resolve datasource related leak",0
+"2021-12-02","ecommerceberlin/ecommerceberlin.com","handle path in external settings fix",0
+"2021-12-02","ecommerceberlin/ecommerceberlin.com","handle single path setting $10$",10
+"2021-12-02","ecommerceberlin/ecommerceberlin.com","internal api endpoint for settings $15$",15
+"2021-12-03","ecommerceberlin/site-components","handle external settings client side $45$",45
+"2021-12-03","ecommerceberlin/site-components","deep merge settings update $10$",0
+"2021-12-03","ecommerceberlin/site-components","handle external settings during SSR $45$",45
+"2021-12-03","ecommerceberlin/site-components","useSettings cleanups $30$",0
+"2021-12-03","ecommerceberlin/site-components","added fallback when setting is missing $10$",10
+"2021-12-03","ecommerceberlin/site-components","added missing useSettings param",0
+"2021-12-03","ecommerceberlin/ecommerceberlin.com","Update package.json",0
+"2021-12-03","ecommerceberlin/ecommerceberlin.com","Update package.json",0
+"2021-12-03","ecommerceberlin/ecommerceberlin.com","Update package.json",0
+"2021-12-03","ecommerceberlin/ecommerceberlin.com","added cors support to api route $5$",5
+"2021-12-03","ecommerceberlin/ecommerceberlin.com","we must api path to handle external regs $15$",15
+"2021-12-03","ecommerceberlin/ecommercegermanyawards.com","we need api proxy to handle CORS problems $30$",30
+"2021-12-06","ecommerceberlin/ecommercegermanyawards.com","added ebe reg form",0
+"2021-12-07","eventjuicer/services","ebe6 emails",0
+"2021-12-08","ecommerceberlin/ecommerceberlin.com","Update exhibitors.md",0
+"2021-12-08","ecommerceberlin/ecommerceberlin.com","changed event date $45$",45
+"2021-12-08","az/eventjuicer-api","use external lib to fix votes $15$",15
+"2021-12-08","az/eventjuicer-api","fixed showing votes",0
+"2021-12-08","eventjuicer/api-components","added external lib to fixvotes $60$",0
+"2021-12-08","eventjuicer/services","styling fix",0
+"2021-12-08","eventjuicer/services","postonement email $30$",30
+"2021-12-08","ecommerceberlin/ecommercegermanyawards.com","Legal files update - date change",0
+"2021-12-08","ecommerceberlin/ecommercegermanyawards.com","changed event info and organizer's address $10$",10
+"2021-12-08","ecommerceberlin/ecommercegermanyawards.com","show votes",0
+"2021-12-09","az/eventjuicer-api","added linkedin profile data $15$",0
+"2021-12-09","ecommerceberlin/ecommercegermanyawards.com","Merge pull request #92 from jprzybylski4/master  Legal files update - date change",0
+"2021-12-09","ecommerceberlin/ecommercegermanyawards.com","Update package.json",0
+"2021-12-14","az/eventjuicer-api","Update RoleController.php",0
+"2021-12-14","az/eventjuicer-api","skip hidden companies on allexhibitors endpoint $30$",30
+"2021-12-14","eventjuicer/api-components","fix",0
+"2021-12-14","eventjuicer/api-components","changed EBE opengraph template $15$  resolves https://github.com/ecommerceberlin/ecommerceberlin.com/issues/105",15
